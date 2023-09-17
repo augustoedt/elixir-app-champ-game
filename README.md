@@ -29,3 +29,24 @@ To access the docker DB.
 docker exec -it champ bash
 
 ```
+
+Add authentication logic
+
+```bash
+mix phx.gen.auth
+```
+
+Add dependencies and make migrations
+
+```bash
+mix deps.get
+```
+
+```bash
+mix ecto.migrate
+```
+
+Say you messed up your mix phx.gen.auth and created a table called userss, you could easily undo the error with mix 
+```bash
+ecto.rollback.
+```
