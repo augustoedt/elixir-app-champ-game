@@ -531,4 +531,11 @@ defmodule Champions.AccountsTest do
     end
   end
 
+  describe "list_users/0" do
+    test "show all users on our system" do
+      user = user_fixture()
+      assert [^user] = Accounts.list_users()
+    end
+  end
+
 end
