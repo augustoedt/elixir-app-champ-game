@@ -20,6 +20,7 @@ defmodule ChampionsWeb.UserLive.Index do
     <.header>
       Listing Users
     </.header>
+    
     <.table
       id="users"
       rows={@streams.users}
